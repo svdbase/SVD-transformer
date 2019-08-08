@@ -2,8 +2,8 @@
 #!/usr/bin/env python
 # +++++++++++++++++++++++++++++++++++++++++++++++++++
 # @File Name: rotator.py
-# @Author: Qing-Yuan Jiang
-# @Mail: qyjiang24 AT gmail.com
+# @Author: Gen Li
+# @Mail: ligen.lab AT bytedance.com
 # +++++++++++++++++++++++++++++++++++++++++++++++++++
 import sys, os
 import numpy as np

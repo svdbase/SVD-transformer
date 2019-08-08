@@ -1,9 +1,9 @@
 # -*- coding: UTF-8 -*-
 #!/usr/bin/env python
 # +++++++++++++++++++++++++++++++++++++++++++++++++++
-# @File Name: clip.py
-# @Author: Qing-Yuan Jiang
-# @Mail: qyjiang24 AT gmail.com
+# @File Name: locator.py
+# @Author: Gen Li
+# @Mail: ligen.lab AT bytedance.com
 # +++++++++++++++++++++++++++++++++++++++++++++++++++
 import numpy as np
 import cv2
