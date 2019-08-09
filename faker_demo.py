@@ -17,12 +17,11 @@ from transformer.transformer_config import config, update_config
 
 parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
 
-parser.add_argument("--input_video_path", type=str, default="example")
-parser.add_argument("--input_video_list_path", type=str, default="example/video_list")
-parser.add_argument("--videopath", type=str, default='example/')
-parser.add_argument("--config_path", type=str, default="transformers/config/demo.yaml")
-parser.add_argument("--transformer", type=str, default="BlackBorder")
-parser.add_argument("--num_procs", type=int, default=3)
+parser.add_argument("--input-video-list-path", type=str, default="example/video_list", help='path to input video list')
+parser.add_argument("--videopath", type=str, default='example/', help='path to store videos')
+parser.add_argument("--config-path", type=str, default="transformers/config/demo.yaml", help='path to configuration file')
+parser.add_argument("--transformer", type=str, default="BlackBorder", help='transformation type [BlackBorder,Cropper,Speeder,Rotator90]')
+parser.add_argument("--num-procs", type=int, default=3, help='the number of processes')
 
 args = parser.parse_args()
 
