@@ -8,8 +8,30 @@ This repo is the source code for generating fake video in the paper "SVD: A Larg
 python 3
 ffmpeg 4.0.2-static
 ```
-### 2. Running Demo
-```python
+### 2. Usage
+```bash
+python faker_demo.py -h
+usage: faker_demo.py [-h] [--input-video-list-path INPUT_VIDEO_LIST_PATH]
+                     [--videopath VIDEOPATH] [--config-path CONFIG_PATH]
+                     [--transformer TRANSFORMER] [--num-procs NUM_PROCS]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --input-video-list-path INPUT_VIDEO_LIST_PATH
+                        path to input video list
+  --videopath VIDEOPATH
+                        path to store videos
+  --config-path CONFIG_PATH
+                        path to configuration file
+  --transformer TRANSFORMER
+                        transformation type [BlackBorder,Cropper,Speeder,Rotator90]
+  --num-procs NUM_PROCS
+                        the number of processes
+```
+
+### 3. Running Demo
+
+```bash
 python faker_demo.py --transformer [transformation]	
 ```
 Here, we implement four transformations, i.e., black border insertion (transformation=BlackBorder), video cropping (transformation=Cropper), video ratation (transformation=Ratotor90), video speeding (transformation=Speeder).
